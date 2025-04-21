@@ -63,7 +63,7 @@ const Home = () => {
 
     axios
       .get(
-        `http://api.weatherapi.com/v1/current.json?key=8b26d241c5564b52a41183325251302&q=${selectedCity}&aqi=no`
+        `http://api.weatherapi.com/v1/current.json?key=8b26d241c5564b52a41183325251302=${selectedCity}&aqi=no`
       )
       .then((response) => {
         setWeather(response.data);
